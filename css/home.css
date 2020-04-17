@@ -1,0 +1,22 @@
+.home li {
+    display: inline-block;
+    border: .5em solid black;
+    background-color: #FAFFFC;
+    width: 47%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.home img {
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 0 4px #000;
+}
+
+.home iframe {
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 0 4px #000;
+}

@@ -9,60 +9,65 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <main>
         <h1 class="titulo-principal">Home Page</h1>
         <div class="container">
-            <h2>Veja abaixo as notícias mais relevantes sobre o COVID-19</h2>
-            <ol class="home">
-                <li><a href=https://www.youtube.com/watch?v=sK5-DfNyewA>
-                        <figure>                            
-                            <iframe src="https://www.youtube.com/embed/sK5-DfNyewA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <figcaption>Acompanhamento de casos ao vivo</figcaption>
-                        </figure>
-                </a></li>
-                <li><a href="https://coronavirus.saude.gov.br/">
-                        <figure>
-                            <img src="imagens/saber.png" alt="Front-page coronavirus saude">
-                            <figcaption>O que você precisa saber</figcaption>
-                        </figure>
-                </a></li>
-                <li><a href="https://www.bbc.com/portuguese/internacional-51766452">
-                        <figure>
-                            <img src="imagens/impacto.png" alt="Site da BBC">
-                            <figcaption>Impacto da COVID-19 sobre a economia mundial</figcaption>
-                        </figure>
-                </a></li>
-                <li><a href="https://google.com/covid19-map/?hl=pt-BR">
-                        <figure>
-                            <img src="imagens/mapa.png" alt="Mapa do coronavirus">
-                            <figcaption>Mapa do COVID-19 e principais estatísticas</figcaption>
-                        </figure>
-                </a></li>
-            </a></li>
-            <li><a href="https://covid.saude.gov.br/">
-                    <figure>
-                        <img src="imagens/brasil.png" alt="COVID-19 no Brasil">
-                        <figcaption>COVID-19 no Brasil</figcaption>
-                    </figure>
-            </a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/COVID-19">
-                    <figure>
-                        <img src="imagens/história.PNG" alt="wiki COVID-19">
-                        <figcaption>Origem COVID-19</figcaption>
-                    </figure>
-            </a></li>
-            </ol>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Veja abaixo as notícias mais relevantes sobre o COVID-19</h3>
+                    <ol class="home">
+                        <li><a href=https://www.youtube.com/watch?v=sK5-DfNyewA>
+                                <figure>                            
+                                    <iframe src="https://www.youtube.com/embed/sK5-DfNyewA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <figcaption>Acompanhamento de casos ao vivo</figcaption>
+                                </figure>
+                        </a></li>
+                        <li><a href="https://coronavirus.saude.gov.br/">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded" src="imagens/saber.png" alt="Front-page coronavirus saude">
+                                    <figcaption>O que você precisa saber</figcaption>
+                                </figure>
+                        </a></li>
+                        <li><a href="https://www.bbc.com/portuguese/internacional-51766452">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded" src="imagens/impacto.png" alt="Site da BBC">
+                                    <figcaption>Impacto da COVID-19 sobre a economia mundial</figcaption>
+                                </figure>
+                        </a></li>
+                        <li><a href="https://google.com/covid19-map/?hl=pt-BR">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded" src="imagens/mapa.png" alt="Mapa do coronavirus">
+                                    <figcaption>Mapa do COVID-19 e principais estatísticas</figcaption>
+                                </figure>
+                        </a></li>
+                    </a></li>
+                    <li><a href="https://covid.saude.gov.br/">
+                            <figure class="figure">
+                                <img class="figure-img img-fluid rounded" src="imagens/brasil.png" alt="COVID-19 no Brasil">
+                                <figcaption>COVID-19 no Brasil</figcaption>
+                            </figure>
+                    </a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/COVID-19">
+                            <figure class="figure">
+                                <img class="figure-img img-fluid rounded" src="imagens/história.PNG" alt="wiki COVID-19">
+                                <figcaption>Origem COVID-19</figcaption>
+                            </figure>
+                    </a></li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </main>
-    <img src="imagens/SARS-CoV-2.jpg" alt="SARS-CoV-2" class="minha-foto">
+    <img src="imagens/SARS-CoV-2.jpg" alt="SARS-CoV-2" class="minha-foto img-fluid ">
     <aside class="navegacao-site">
-        <nav>
+        <nav class="nav flex-column">
             <ul>
-                <li><a href="home.html">Home Page</a></li>
-                <li><a href="bio.html">Sobre mim</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a class="nav-link active" href="home.html">Home page</a></li>
+                <li><a class="nav-link active" href="bio.html">Sobre mim</a></li>
+                <li><a class="nav-link active"href="contato.html">Contato</a></li>
             </ul>
         </nav>
         <ul class="icones-redes-sociais">
@@ -81,5 +86,8 @@
     <footer class="rodape-pagina">
         &copy; James Kelvin 2020
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

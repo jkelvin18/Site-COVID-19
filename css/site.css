@@ -56,7 +56,7 @@ main p {
 .navegacao-site a {
     color: inherit;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .navegacao-site a:hover,
@@ -152,6 +152,7 @@ main {
     top: 0;
     right: 0;
     height: 300px;
+    width: 300px;
 }
 
 .icones-redes-sociais a {

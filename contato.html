@@ -9,46 +9,50 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <main>
         <h1 class="titulo-principal">Contato</h1>
         <div class="container">
-            <form>
-                <fieldset>
-                    <legend>Seus dados</legend>
-                    <label class="com-icone" for="nome">Nome completo</label>
-                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
-                    <label class="com-icone" for="email">E-mail</label>
-                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
-                </fieldset>
-                <fieldset>
-                    <legend>Assunto</legend>
-                    <label>
-                        <input type="radio" name="assunto" value="Serviço">
-                        Serviço
-                    </label>
+            <div class="row">
+                <div class="col-sm-8"></div>
+                <form>
                     <fieldset>
-                        <input type="radio" name="assunto" value="Outro" id="outro">
-                        <label for="outro">
-                            Outro
-                        </label>
-                        <input type="text" name="outro-assunto">
+                        <legend>Seus dados</legend>
+                        <label class="com-icone" for="nome">Nome completo</label>
+                        <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                        <label class="com-icone" for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required placeholder="seu@email.com">
                     </fieldset>
-                </fieldset>
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
-                <button type="submit">Enviar mensagem</button>
-            </form>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <label>
+                            <input type="radio" name="assunto" value="Serviço">
+                            Serviço
+                        </label>
+                        <fieldset>
+                            <input type="radio" name="assunto" value="Outro" id="outro">
+                            <label for="outro">
+                                Outro
+                            </label>
+                            <input type="text" name="outro-assunto">
+                        </fieldset>
+                    </fieldset>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
         </div>
     </main>
-    <img src="imagens/foto perfil.jpg" alt="Minha foto" class="minha-foto">
+    <img src="imagens/foto perfil.jpg" alt="Minha foto" class="minha-foto img-fluid ">
     <aside class="navegacao-site">
-        <nav>
+        <nav class="nav flex-column">
             <ul>
-                <li><a href="home.html">Home page</a></li>
-                <li><a href="bio.html">Sobre mim</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a class="nav-link active" href="home.html">Home page</a></li>
+                <li><a class="nav-link active" href="bio.html">Sobre mim</a></li>
+                <li><a class="nav-link active"href="contato.html">Contato</a></li>
             </ul>
         </nav>
         <ul class="icones-redes-sociais">
@@ -67,5 +71,8 @@
     <footer class="rodape-pagina">
         &copy; James Kelvin 2020
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

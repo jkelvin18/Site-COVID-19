@@ -9,34 +9,40 @@
     <link rel="stylesheet" href="css/bio.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <main>
         <h1 class="titulo-principal">Sobre mim</h1>
         <div class="container">
-            <p>Aluno do curso de Análise e Desenvolvimento de Sistemas, com formação em Engenharia Civil na Anhembi Morumbi e em Tecnologia da Construção Civil na FATEC-SP.</p>
-            <p>Possuo experiência nas áreas de Ciência de Dados e de Desenvolvimento utilizando as tecnologias: Integration Services (SSIS), SAS, Alteryx, Hadoop, Tableau e Angular 7. Além disso, tenho conhecimento nas linguagens SQL, Python, R e JavaScript.</p>
-            <h2 class="subtitulo-texto">Experiência</h2>
-            <blockquote class="citacao-bio petrobras" tabindex="1">
-                <p>É melhor estar preparado para uma oportunidade e não ter nenhuma, do que ter uma oportunidade e não estar preparado.</p>
-                <cite> Whitney M. Young Jr.</cite>
-            </blockquote>
-            <h2>Estagiário de Engenharia de Dados - Itaú</h2>
-            <p><strong>Principais atividaes: </strong>Auxilio na criação de rotinas para automatizar a extração e processamento de dados;
-                Na manipulação de grandes volumes de informações de diferentes fontes e em diferentes formatos, evitando intervenção humana com a utilização de ferramentas de ETL como Alteryx, SAS e Integration Services (SSIS);
-                Apoio as áreas de clientes na interpretação e análise dos dados, utilizando técnicas estatísticas;
-                Faço a criação de relatórios e dashboards utilizando ferramentas como Tableau e Power BI.</p>
-            <h2>Desenvolvedor Front-end - Villashow.com.br</h2>
-            <p><strong>Principais atividaes:</strong> Faço desenvolvimento de novas regras de negócio, implemento código legado, crio novos componentes de acordo com a estória de usuário. Principais tecnologias utilizadas: Git, Angular7, TypeScript, Html5, SASS, WebPack, Npm, Angular/Cli, BootStrap4, PrimeNg e Http/Rest. </p>         
+            <div class="row">
+                <div class="col-sm-10">
+                    <p>Aluno do curso de Análise e Desenvolvimento de Sistemas, com formação em Engenharia Civil na Anhembi Morumbi e em Tecnologia da Construção Civil na FATEC-SP.</p>
+                    <p>Possuo experiência nas áreas de Ciência de Dados e de Desenvolvimento utilizando as tecnologias: Integration Services (SSIS), SAS, Alteryx, Hadoop, Tableau e Angular 7. Além disso, tenho conhecimento nas linguagens SQL, Python, R e JavaScript.</p>
+                    <h2 class="subtitulo-texto">Experiência</h2>
+                    <blockquote class="citacao-bio petrobras" tabindex="1">
+                        <p>É melhor estar preparado para uma oportunidade e não ter nenhuma, do que ter uma oportunidade e não estar preparado.</p>
+                        <cite> Whitney M. Young Jr.</cite>
+                    </blockquote>
+                    <h2>Estagiário de Engenharia de Dados - Itaú</h2>
+                    <p><strong>Principais atividaes: </strong>Auxilio na criação de rotinas para automatizar a extração e processamento de dados;
+                        Na manipulação de grandes volumes de informações de diferentes fontes e em diferentes formatos, evitando intervenção humana com a utilização de ferramentas de ETL como Alteryx, SAS e Integration Services (SSIS);
+                        Apoio as áreas de clientes na interpretação e análise dos dados, utilizando técnicas estatísticas;
+                        Faço a criação de relatórios e dashboards utilizando ferramentas como Tableau e Power BI.</p>
+                    <h2>Desenvolvedor Front-end - Villashow.com.br</h2>
+                    <p><strong>Principais atividaes:</strong> Faço desenvolvimento de novas regras de negócio, implemento código legado, crio novos componentes de acordo com a estória de usuário. Principais tecnologias utilizadas: Git, Angular7, TypeScript, Html5, SASS, WebPack, Npm, Angular/Cli, BootStrap4, PrimeNg e Http/Rest. </p>
+                </div>
+            </div>
+        </div>
     </main>
-    <img src="imagens/foto perfil.jpg" alt="Minha foto" class="minha-foto">
+    <img src="imagens/foto perfil.jpg" alt="Minha foto" class="minha-foto img-fluid ">
     <aside class="navegacao-site">
         <h1>James Kelvin</h1>
-        <nav>
+        <nav class="nav flex-column">
             <ul>
-                <li><a href="home.html">Home page</a></li>
-                <li><a href="bio.html">Sobre mim</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a class="nav-link active" href="home.html">Home page</a></li>
+                <li><a class="nav-link active" href="bio.html">Sobre mim</a></li>
+                <li><a class="nav-link active"href="contato.html">Contato</a></li>
             </ul>
         </nav>
         <ul class="icones-redes-sociais">
@@ -55,5 +61,8 @@
     <footer class="rodape-pagina">
         &copy; James Kelvin 2020
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
